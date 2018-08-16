@@ -1,0 +1,55 @@
+<div id="flipkart-navbar">
+  <div class="container">
+      <div class="row row1">
+          <ul class="largenav pull-right">
+              <li class="upper-links"><a class="links" (click)="shop('electronics')">Electronics</a></li>
+              <li class="upper-links"><a class="links" (click)="shop('lifestyle')">Lifestyle</a></li>
+              <li class="upper-links"><a class="links" (click)="shop('home')">Home and Furniture</a></li>
+              <li class="upper-links"><a class="links" (click)="shop('tv')">TVs & Appliances</a></li>
+              <li class="upper-links"><a class="links" (click)="shop('sports')">Sports, Books & More</a></li>
+              <li class="upper-links">
+                  <a class="links" href="#">
+                      
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div class="row row2">
+          <div class="col-sm-2">
+              <h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">☰ Shop</span></h2>
+              <h1 style="margin:0px;"><span class="largenav">Shop</span></h1>
+          </div>
+          <div class="flipkart-navbar-search smallsearch col-sm-8 col-xs-11">
+              <div class="row">
+                  <input class="flipkart-navbar-input col-xs-11" type="" placeholder="Search for Products, Brands and more" name="">
+                  <button class="flipkart-navbar-button col-xs-1">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+              </div>
+          </div>
+          <div class="cart largenav col-sm-2">
+              <a class="cart-button">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                  <span class="item-number ">0</span>
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+<div id="mySidenav" class="sidenav">
+  <div class="container" style="background-color: #2874f0; padding-top: 10px;">
+      <span class="sidenav-heading">Home</span>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  </div>
+  <a (click)="shop('electronics')">Electronics</a>
+  <a (click)="shop('lifestyle')">Lifestyle</a>
+  <a (click)="shop('home')">Home and Furniture</a>
+  <a (click)="shop('tv')">TVs & Appliances</a>
+  <a (click)="shop('sports')">Sports, Books & More</a>
+  <hr/>
+  <a href="#">Offer Zone</a>
+  <hr/>
+  <a href="#">My Cart</a>
+  <a href="#">My Orders</a>
+  <a href="#">My Account</a>
+</div>
