@@ -1,0 +1,43 @@
+.box{
+    width: 60%;
+    height: 540px;
+    overflow: auto;
+   
+    margin-top: 2%;
+    margin-left: 20%;
+
+}
+.total{
+    width: 60%;
+    height: 50px;
+    
+    margin-left: 20%;
+
+}
+.total button {
+    margin-left: 35%;
+    margin-top: 2%;
+}
+.btn-primary{
+
+  margin-left: 35%;
+   
+}
+.name,.name1{
+    width: 20%;
+
+}
+.cost{
+    width: 30%;
+    margin-left: 20%;
+}
+.add,.add1{
+    width: 20%;
+    float: right;
+}
+.btn-default{
+    margin-left: 30%;
+}
+.add1{
+    margin-left: 40%;
+}
