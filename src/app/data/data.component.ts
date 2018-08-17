@@ -21,14 +21,12 @@ export class DataComponent implements OnInit {
   cart=[];
   add(item){
     this.cart.push(item);
-   // console.log(this.cart)
-   
   }
   checkout()
   {
     this.service.Alldata =this.cart;
     if(this.cart.length>0){
-      this.route.navigate(['/Checkout'])
+      this.route.navigate(['/checkout'])
     }
     else{
       alert('Cart is Empty')

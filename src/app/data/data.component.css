@@ -19,7 +19,7 @@
     margin-top: 2%;
 }
 .btn-primary{
-
+  margin-top: -10%;
   margin-left: 35%;
    
 }
@@ -29,7 +29,8 @@
 }
 .cost{
     width: 30%;
-    margin-left: 20%;
+    margin-left: 24%;
+    margin-top: -4%;
 }
 .add,.add1{
     width: 20%;

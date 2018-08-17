@@ -1,8 +1,8 @@
 <div class="outer">
-  
+  <div class="box">
     
-      <div *ngFor=" let item of showItem" class="form-control">
-        
+      <div *ngFor=" let item of showItem">
+        <div class="form-inline">
           <div class="name">
             <span>{{item.name}}</span>
           </div>
@@ -13,12 +13,11 @@
           <div class="add">
             <button class="btn btn-primary" (click)="add(item)">Add</button>
           </div>
-          <label></label>
-      
+        </div>
       </div>
-    
-    <div class="form-control">
-      <div class=" form-inline">
+
+    <div >
+      <div>
         <div class="name1">
           <button class="btn btn-default" (click)="checkout()">Check-Out</button>
         </div>
@@ -28,5 +27,5 @@
         </div>
       </div>
     </div>
-  
+  </div>
 </div>

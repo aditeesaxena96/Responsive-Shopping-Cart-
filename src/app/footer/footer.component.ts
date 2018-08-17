@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ShoppingService } from '../shopping.service';
 
 @Component({
   selector: 'app-footer',
@@ -6,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-
-  constructor() { }
+  showItem;
+  total=0;
+  constructor(private service :ShoppingService) {
+    this.showItem=service.Alldata;
+     this.showItem.forEach(element => {
+       this.total +=element.price;
+     });
+   }
 
   ngOnInit() {
   }
